@@ -108,24 +108,24 @@ class GoogleMapField extends FormField {
 			$name.'[Latitude]',
 			'Lat',
 			$this->recordFieldData('Latitude')
-		)->addExtraClass('googlemapfield-latfield');
+		)->addExtraClass('googlemapfield-latfield no-change-track');
 
 		$this->lngField = HiddenField::create(
 			$name.'[Longitude]',
 			'Lng',
 			$this->recordFieldData('Longitude')
-		)->addExtraClass('googlemapfield-lngfield');
+		)->addExtraClass('googlemapfield-lngfield no-change-track');
 
 		$this->zoomField = HiddenField::create(
 			$name.'[Zoom]',
 			'Zoom',
 			$this->recordFieldData('Zoom')
-		)->addExtraClass('googlemapfield-zoomfield');
+		)->addExtraClass('googlemapfield-zoomfield no-change-track');
 		$this->boundsField = HiddenField::create(
 			$name.'[Bounds]',
 			'Bounds',
 			$this->recordFieldData('Bounds')
-		)->addExtraClass('googlemapfield-boundsfield');
+		)->addExtraClass('googlemapfield-boundsfield no-change-track');
 		$this->children = new FieldList(
 			$this->latField,
 			$this->lngField,
